@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidClass/PortfolioApp/app/src/main/res/drawable/al_send_foreground.xml" value="0.1" />
+        <entry key="..\:/AndroidClass/PortfolioApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/AndroidClass/PortfolioApp/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/AndroidClass/PortfolioApp/app/src/main/res/drawable/ic_launcher_search_foreground.xml" value="0.1065" />
+        <entry key="..\:/AndroidClass/PortfolioApp/app/src/main/res/font/rubik.xml" value="0.1" />
+        <entry key="..\:/AndroidClass/PortfolioApp/app/src/main/res/layout/activity_anime_list.xml" value="0.25" />
+        <entry key="..\:/AndroidClass/PortfolioApp/app/src/main/res/layout/activity_anime_search.xml" value="0.25" />
+        <entry key="..\:/AndroidClass/PortfolioApp/app/src/main/res/layout/activity_app_bar.xml" value="0.13333333333333333" />
+        <entry key="..\:/AndroidClass/PortfolioApp/app/src/main/res/layout/activity_dialog.xml" value="0.1" />
+        <entry key="..\:/AndroidClass/PortfolioApp/app/src/main/res/layout/activity_edit.xml" value="0.1" />
+        <entry key="..\:/AndroidClass/PortfolioApp/app/src/main/res/layout/activity_edit_anime.xml" value="0.1" />
+        <entry key="..\:/AndroidClass/PortfolioApp/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/AndroidClass/PortfolioApp/app/src/main/res/layout/activity_register.xml" value="0.18" />
+        <entry key="..\:/AndroidClass/PortfolioApp/app/src/main/res/layout/anime_view_items.xml" value="0.13333333333333333" />
+        <entry key="..\:/AndroidClass/PortfolioApp/app/src/main/res/menu/app_bar.xml" value="0.22" />
+        <entry key="..\:/AndroidClass/PortfolioApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="..\:/AndroidClass/PortfolioApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_login.png.xml" value="0.11" />
+        <entry key="..\:/AndroidClass/PortfolioApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
+        <entry key="..\:/AndroidClass/PortfolioApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round_login.webp.xml" value="0.1" />
+        <entry key="..\:/AndroidClass/PortfolioApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round_login.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

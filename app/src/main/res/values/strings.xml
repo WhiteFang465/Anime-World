@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">PortfolioApp</string>
+    <string name="username">User Name</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="lastName">Last Name</string>
+    <string name="update">Update</string>
+    <string name="firstName">First Name</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="age">Age</string>
+    <string name="address">Address</string>
+    <string name="email">Email</string>
+    <string name="confirmPasswordError">Incorrect password</string>
+    <string name="register_emptyError">This field cannot be empty</string>
+    <string name="login_invalidUsername">Invalid Username</string>
+    <string name="login_invalidPassword">Invalid Password</string>
+    <string name="content_description_favorite">Login</string>
+    <string name="login">Login</string>
+    <string name="content_description_menu">Menu Options</string>
+    <string name="menu">Menu</string>
+    <string name="content_description_more">More</string>
+    <string name="more">More</string>
+    <string name="EnterMessage">Enter Anime Name</string>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/appBarLogin"
+        app:showAsAction="ifRoom"
+        android:contentDescription="@string/content_description_favorite"
+        android:icon="@drawable/ic_launcher_login_foreground"
+        android:title="@string/login" />
+
+        <item
+            android:id="@+id/search"
+            app:showAsAction="ifRoom"
+            android:contentDescription="@string/content_description_menu"
+            android:icon="@drawable/ic_launcher_search_foreground"
+            android:title="@string/menu" />
+
+        <item
+            android:id="@+id/more"
+            app:showAsAction="never"
+            android:contentDescription="@string/content_description_more"
+            android:title="@string/more" />
+</menu>
