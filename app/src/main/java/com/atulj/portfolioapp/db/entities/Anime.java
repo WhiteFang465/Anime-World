@@ -14,6 +14,7 @@ public class Anime {
     private String synopsis;
     private String background;
     private Images images;
+    private int animeId;
 
 
     public String getTitle() {
