@@ -1,5 +1,6 @@
 package com.atulj.portfolioapp.recyclerview;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.view.View;
 import android.widget.ImageView;
@@ -9,9 +10,11 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.atulj.portfolioapp.AnimeSearchActivity;
 import com.atulj.portfolioapp.EditAnimeActivity;
 import com.atulj.portfolioapp.R;
 import com.atulj.portfolioapp.db.entities.Anime;
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.squareup.picasso.Picasso;
 
 public class AnimeViewHolder extends RecyclerView.ViewHolder {
@@ -31,23 +34,28 @@ public class AnimeViewHolder extends RecyclerView.ViewHolder {
         name = itemView.findViewById(R.id.animeListViewItem_name);
 
         itemView.setOnLongClickListener(v -> {
-            Toast.makeText(itemView.getContext(), "Deleted", Toast.LENGTH_SHORT).show();
-            adapter.remove(animeEntity);
+            new MaterialAlertDialogBuilder(itemView.getContext())
+
+                    .setTitle("Do you want to remove this Anime?")
+                    .setPositiveButton("Delete", (DialogInterface dialog, int which) -> {
+                        adapter.remove(animeEntity);
+                        Toast.makeText(itemView.getContext(), "Removed from the List", Toast.LENGTH_SHORT).show();
+                    })
+                    .setNeutralButton("CANCEL", (DialogInterface dialog, int which) -> {
+
+                    })
+
+                    .show();
+
             return true;
         });
         itemView.setOnClickListener(q -> {
-            Intent editAnime = new Intent(itemView.getContext(), EditAnimeActivity.class)
-                    .putExtra(EXTRA_ANIME_TITLE, animeEntity.getTitle());
-
+            Intent editAnime = new Intent(itemView.getContext(), AnimeSearchActivity.class)
+                    .putExtra(EXTRA_ANIME_TITLE, animeEntity.getAnimeId());
             itemView.getContext().startActivity(editAnime);
 
         });
-//        itemView.setOnTouchListener(q->{
-//            public boolean onTouch(View q, MotionEvent event) {
-//                // ... Respond to touch events
-//                return true;
-//            }
-//        });
+
 
     }
 

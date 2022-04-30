@@ -5,6 +5,15 @@ import java.util.List;
 public class Search {
 
     List<Anime> data;
+    Anime singleData;
+
+    public Anime getSingleData() {
+        return singleData;
+    }
+
+    public void setSingleData(Anime singleData) {
+        this.singleData = singleData;
+    }
 
     public List<Anime> getData() {
         return data;

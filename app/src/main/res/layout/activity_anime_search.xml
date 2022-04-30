@@ -1,61 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:theme="@style/Theme.App">
-
-    <EditText
-        android:id="@+id/main_query"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:hint="Enter Search here"
-        android:gravity="center"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/main_searchButton"
-        />
+    android:theme="@style/Theme.App"
+    tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/main_searchButton"
+        android:id="@+id/search_ImageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/al_send_foreground"
-        app:layout_constraintBottom_toBottomOf="@+id/main_query"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/main_query"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/main_searchResult"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        tools:itemCount="10"
-        tools:listitem="@android:layout/simple_list_item_checked"
-        app:layout_constraintTop_toBottomOf="@id/main_query"
-        app:layout_constraintBottom_toTopOf="@id/main_favorites"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
 
-    <Button
-        android:theme="@style/Theme.App"
-        android:id="@+id/main_favorites"
-        android:layout_width="0dp"
+    <TextView
+        android:id="@+id/search_Title"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="See Favorites"
+        android:layout_marginStart="4dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:hint="Anime Name"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/search_ImageView"
+        app:layout_constraintStart_toEndOf="@+id/search_ImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@tools:sample/lorem" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/search_rank_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rank:"
+        android:textSize="15sp"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/search_rank" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/search_rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Rank"
+        android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/main_searchResult"
-        app:layout_constraintBottom_toBottomOf="parent"
-        />
+        app:layout_constraintStart_toEndOf="@+id/search_rank_holder"
+        app:layout_constraintTop_toBottomOf="@+id/search_ImageView" />
 
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/search_Episodes_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
 
+        android:text="Episodes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_rank_holder" />
 
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/search_Episodes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Episodes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/search_Episodes_holder"
+        app:layout_constraintTop_toBottomOf="@+id/search_rank" />
 
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/search_Status_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_Episodes_holder" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/search_Status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Status"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/search_Status_holder"
+        app:layout_constraintTop_toBottomOf="@+id/search_Episodes" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/search_Synopsis_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Synopsis"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_Status_holder" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/search_Synopsis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Synopsis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/search_Synopsis_holder"
+        app:layout_constraintTop_toBottomOf="@+id/search_Status" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
