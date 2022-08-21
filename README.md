@@ -1,6 +1,9 @@
 # Anime Search Application
 >A Mobile application that gives you the list of all the animes. Search for your favourite anime and get the description about it.
 
+>[Anime World](https://user-images.githubusercontent.com/87813463/185775102-00ac4b1f-b7bd-4920-9f46-f580c2a793ec.mp4)
+
+
 # Technology Used
 > - Android(Java).
 > - Room Database.
@@ -16,5 +19,3 @@
  * After registering you can login and get the list of Anime's.
  * Search for your favourite anime.
 
-# Snapshot
->https://user-images.githubusercontent.com/87813463/185775102-00ac4b1f-b7bd-4920-9f46-f580c2a793ec.mp4
